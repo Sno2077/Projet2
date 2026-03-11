@@ -1,0 +1,201 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="#" />
+    <title></title>
+  </head>
+  <body>
+    <div class="fullpage">
+      <!--Page complete-->
+      <header class="header">
+        <!--Div de En-Tete -->
+        <h1 class="h1">Contactez-nous</h1>
+      </header>
+        <div class="maincontent">
+                 <div class="divcenter-form">
+                <!--Formulaire entier excluant le titre-->
+          <div class="workshopform">
+            <form action="index.html" method="get">
+              <div class="form-element">
+                <!--question 1 last name-->
+                <label for="lastnameid">Last name :</label>
+                <div>
+                  <input
+                    class="textinput"
+                    type="text"
+                    name="lastname"
+                    id="lastnameid" />
+                </div>
+              </div>
+              <br />
+              <!--question 2 first name-->
+              <div class="form-element">
+                <label for="firstnameid">Name :</label>
+                <div>
+                  <input
+                    class="textinput"
+                    type="text"
+                    name="firstname"
+                    id="firstnameid" />
+                </div>
+              </div>
+
+              <br />
+
+              <!--question 3 gender -->
+              <div class="form-element">
+                Gender :
+                <div class="radiodots">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="gender"
+                    id="maleid"
+                    value="male" />
+                  <label class="label" for="maleid">Men</label>
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="gender"
+                    id="transgenderid"
+                    value="transgender" />
+                  <label class="label" for="transgenderid">Transgender</label>
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="gender"
+                    id="nonbinaryid"
+                    value="nonbinary" />
+                  <label class="label" for="nonbinaryid">Non-binairy</label>
+
+                  <br />
+
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="gender"
+                    id="femaleid"
+                    value="female" />
+                  <label class="label" for="femaleid">Women</label>
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="gender"
+                    id="unknownid"
+                    value="unknown" />
+                  <label class="label" for="unknownid"
+                    >Do not want to answer</label
+                  >
+                </div>
+              </div>
+
+              <br />
+
+              <div class="form-element">
+                <!--question 4 date of birth-->
+                <label for="dobid">Date of birth :</label>
+                <div>
+                  <input class="textinput" type="date" name="dob" id="dobid" />
+                </div>
+              </div>
+
+              <br />
+
+              <div class="form-element">
+                <!--question 5 email-->
+                <label for="emailid">email :</label>
+                <div>
+                  <input
+                    class="emailinput"
+                    type="email"
+                    name="email"
+                    id="emailid"
+                    placeholder="_________@_____.com" />
+                </div>
+              </div>
+
+              <br />
+
+              <div class="form-element">
+                <!--question 6 phone-->
+                <label for="phoneid">Phone number :</label>
+                <div>
+                  <input
+                    class="phoneinput"
+                    type="tel"
+                    name="phone"
+                    id="phoneid"
+                    placeholder="( ___ ) - ( ___ ) - ( ____ )" />
+                </div>
+              </div>
+
+              <br />
+
+              <div class="form-element">
+                <!--question 7 Menu select start date-->
+                <label for="selectif">Select start date :</label>
+                <select class="selectmenu" name="workshopdate" id="selectid">
+                  <option value="class1" id="class1id">
+                    September 12th 2026
+                  </option>
+                  <option value="class2" id="class2id">
+                    January 12th 2026
+                  </option>
+                  <option value="class3" id="class3id">May 4th 2026</option>
+                </select>
+              </div>
+
+              <br />
+
+              <!--Question 8 chainsaw color-->
+              <div class="centertext">
+                <label for="chainsawid">Select your chainsaw's color :</label>
+                <input
+                  class="colorinput"
+                  type="color"
+                  name="chainsaw"
+                  id="chainsawid"
+                  value="#ff0000" />
+              </div>
+
+              <br />
+              <!--Submit button-->
+              <div class="submit-element">
+                <input class="submit-button" type="submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--Bas de page-->
+      <footer class="footer">
+        <a
+          href="https://www.monemploi.com/metiers-et-professions/fiche/elagueur#:~:text=Personne%20qui%20effectue%20de%20la,ainsi%20que%20leurs%20principales%20caract%C3%A9ristiques."
+          target="_blank"
+          class="textwhite">
+          <strong>Learn more about the profession 🎓</strong>
+        </a>
+        <br />
+        <a
+          href="https://siaq.org/fr/a-propos/mission-et-objectifs/#:~:text=La%20Soci%C3%A9t%C3%A9%20internationale%20d'arboriculture,a%20%C3%A9t%C3%A9%20fond%C3%A9e%20en%201977."
+          target="_blank"
+          class="textwhite">
+          <strong>SIQA Website 🔍</strong>
+        </a>
+        <br />
+        <a
+          href="https://www.animatedknots.com/complete-knot-list"
+          target="_blank"
+          class="textwhite">
+          <strong>Knots repertoire 🪢</strong>
+        </a>
+
+        <p class="copyright textwhite">© 2022 RatteInc.</p>
+      </footer>
+    </div>
+  </body>
+</html>
