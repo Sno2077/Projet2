@@ -8,18 +8,20 @@
     <title></title>
   </head>
   <body>
-    <div class="fullpage">
-      <!--Page complete-->
+   
       <header class="header">
         <!--Div de En-Tete -->
-        <h1 class="h1">Contactez-nous</h1>
+        <h1>Contactez-nous</h1>
       </header>
+      
         <div class="maincontent">
                  <div class="divcenter-form">
                 <!--Formulaire entier excluant le titre-->
+
           <div class="workshopform">
             <form action="index.html" method="get">
               <div class="form-element">
+
                 <!--question 1 last name-->
                 <label for="lastnameid">Last name :</label>
                 <div>
@@ -30,7 +32,9 @@
                     id="lastnameid" />
                 </div>
               </div>
+
               <br />
+
               <!--question 2 first name-->
               <div class="form-element">
                 <label for="firstnameid">Name :</label>
@@ -45,50 +49,65 @@
 
               <br />
 
-              <!--question 3 gender -->
               <div class="form-element">
-                Gender :
+                <!--question 3 email-->
+                <label for="emailid">email :</label>
+                <div>
+                  <input
+                    class="emailinput"
+                    type="email"
+                    name="email"
+                    id="emailid"
+                    placeholder="_________@_____.com" />
+                </div>
+
+              <!--question 3 evaluation -->
+              <div class="form-element">
+                Évaluez-nous : 
                 <div class="radiodots">
                   <input
                     class="radioinput"
                     type="radio"
-                    name="gender"
-                    id="maleid"
-                    value="male" />
-                  <label class="label" for="maleid">Men</label>
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="gender"
-                    id="transgenderid"
-                    value="transgender" />
-                  <label class="label" for="transgenderid">Transgender</label>
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="gender"
-                    id="nonbinaryid"
-                    value="nonbinary" />
-                  <label class="label" for="nonbinaryid">Non-binairy</label>
+                    name="rating"
+                    id="1starid"
+                    value="1star" />
+                  <label class="label" for="1starid">🍕 </label>
 
-                  <br />
+                  <div class="radiodots">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="rating"
+                    id="2starid"
+                    value="2star" />
+                  <label class="label" for="2starid">🍕🍕 </label>
 
+                  <div class="radiodots">                    
                   <input
                     class="radioinput"
                     type="radio"
-                    name="gender"
-                    id="femaleid"
-                    value="female" />
-                  <label class="label" for="femaleid">Women</label>
+                    name="rating"
+                    id="3starid"
+                    value="3star" />
+                  <label class="label" for="3starid">🍕🍕🍕 </label>
+
+                  <div class="radiodots">
                   <input
                     class="radioinput"
                     type="radio"
-                    name="gender"
-                    id="unknownid"
-                    value="unknown" />
-                  <label class="label" for="unknownid"
-                    >Do not want to answer</label
-                  >
+                    name="rating"
+                    id="2starid"
+                    value="2star" />
+                  <label class="label" for="2starid">🍕🍕🍕🍕 </label>
+
+                  <div class="radiodots">                    
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    name="rating"
+                    id="3starid"
+                    value="3star" />
+                  <label class="label" for="3starid">🍕🍕🍕🍕🍕 </label>
                 </div>
               </div>
 
@@ -162,40 +181,16 @@
               </div>
 
               <br />
+
               <!--Submit button-->
               <div class="submit-element">
-                <input class="submit-button" type="submit" />
+                <input class="submit-button" type="submit" />            
               </div>
+
             </form>
           </div>
         </div>
       </div>
-
-      <!--Bas de page-->
-      <footer class="footer">
-        <a
-          href="https://www.monemploi.com/metiers-et-professions/fiche/elagueur#:~:text=Personne%20qui%20effectue%20de%20la,ainsi%20que%20leurs%20principales%20caract%C3%A9ristiques."
-          target="_blank"
-          class="textwhite">
-          <strong>Learn more about the profession 🎓</strong>
-        </a>
-        <br />
-        <a
-          href="https://siaq.org/fr/a-propos/mission-et-objectifs/#:~:text=La%20Soci%C3%A9t%C3%A9%20internationale%20d'arboriculture,a%20%C3%A9t%C3%A9%20fond%C3%A9e%20en%201977."
-          target="_blank"
-          class="textwhite">
-          <strong>SIQA Website 🔍</strong>
-        </a>
-        <br />
-        <a
-          href="https://www.animatedknots.com/complete-knot-list"
-          target="_blank"
-          class="textwhite">
-          <strong>Knots repertoire 🪢</strong>
-        </a>
-
-        <p class="copyright textwhite">© 2022 RatteInc.</p>
-      </footer>
     </div>
   </body>
 </html>
