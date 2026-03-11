@@ -1,4 +1,171 @@
-body {
-  padding: 0px;
-  margin: 0px;
+/* RESET + BASE (mobile par défaut) */
+* {
+  box-sizing: border-box;  /* Largeur inclut padding + bordures */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;  /* Police uniforme */
+}
+
+html { 
+  font-size: 16px;  /* 1rem = 16px partout */
+}
+
+body { 
+  line-height: 1.5;  /* Espacement lignes texte 150% */
+  min-height: 105vh; /* Hauteur min > écran (footer bas visible) */
+  background-image: url('https://images.unsplash.com/photo-1668394559082-ec8de901fe86?ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;     /* Image remplit sans déformer */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* Fond fixe au scroll */
+}
+
+/* HEADER + NAV MOBILE (colonne verticale) */
+header {
+  padding: 1rem; 
+  background: black;
+  color: white;
+}
+
+nav { 
+  margin-top: 1rem;  
+}
+
+nav a {
+  display: block;        /* Chaque lien = ligne entière (mobile) */
+  padding: 0.9rem 1.2rem;
+  color: #fff;
+  text-decoration: none; /* Pas de soulignement */
+  background: black;
+  border: 2px solid #ddd;  
+  border-radius: 8px;      /* Coins arrondis */
+  margin-bottom: 0.5rem;   /* Espace entre boutons */
+  text-align: center;
+}
+
+/* MAIN MOBILE (les divs empilées vertical) */
+main.contenu-image { 
+  padding: 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;   /* Vertical mobile */
+  gap: 2.5rem;
+}
+
+/* Les divs (3 images + titre centré) */
+.image {
+  position: relative;       /* Titre positionné ABSOLU sur image */
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  overflow: hidden;         /* Image ne déborde pas */
+  margin-bottom: 0;
+  padding: 1rem;            /* Texte non collé bords */
+}
+
+/* Backgrounds UNIQUES pour chaque image (.image 1re, 2e et 3e) */
+.image:nth-child(1) {
+  background-image: url('https://images.unsplash.com/photo-1625173616412-7b403d49a41e?ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.image:nth-child(2) {
+  background-image: url('https://images.unsplash.com/photo-1627399270231-7d36245355a9?ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.image:nth-child(3) {
+  background-image: url('https://images.unsplash.com/photo-1695029107060-c0bd8fef5605?ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Titres SUR image (couleur + ombre) */
+.image h3 {
+  color: #fde6e6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);  /* Ombre noire lisibilité */
+  z-index: 2;               /* Au-dessus image */
+  margin: 0;
+}
+
+/* FOOTER (gauche mobile) */
+footer {
+  padding: 1rem 1rem 2rem;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Contenu à GAUCHE */
+  gap: 1.2rem;/
+}
+
+#retour-haut {
+  background: black;
+  color: white;
+  border: 2px solid #ddd;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;          /* Main souris */
+  font-size: 0.8rem;
+}
+
+footer p { 
+  font-size: 0.95rem;
+}
+
+/* DESKTOP ≥1024px (layout horizontal) */
+@media (min-width: 1024px) {
+
+  html, body { height: 100%; }  /* Full height écran */
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header { padding: 1.5rem 1.5rem 1.5rem 1rem; }
+  
+  nav {
+    display: flex;
+    flex-direction: row;       /* HORIZONTAL */
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  
+  nav a { 
+    display: inline-block;  /* Pas block (ligne) */
+    margin-bottom: 0; 
+  }
+
+  /* MAIN DESKTOP : Divs côte à côte */
+  main.contenu-image {
+    padding: 4rem 3rem 6rem;
+    max-width: 1400px;        /* Limite large écrans */
+    margin: 0 auto;           /* CENTRÉ */
+    flex-direction: row;      /* HORIZONTAL */
+    justify-content: center;
+    align-items: stretch;     /* Même hauteur */
+    gap: 3rem;
+    flex: 1;                  /* Prend espace restant */
+  }
+  
+  /* images fixe largeur desktop */
+  .image { 
+    flex: 0 0 420px;
+    height: 240px;
+  }
+  
+  /* Footer asymétrique (gauche comme nav) */
+  footer { 
+    padding: 2rem 3rem 3rem 1rem;
+    flex-shrink: 0;     /* Jamais écrasé */
+  }
 }
