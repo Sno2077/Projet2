@@ -15,7 +15,7 @@
       <form action="index.html" method="get">
         <div class="form-element">
           <!--question 1 last name-->
-          <label for="lastnameid">Last name :</label>
+          <label for="lastnameid">Last name</label>
           <div>
             <input
               class="textinput"
@@ -27,7 +27,7 @@
 
         <!--question 2 first name-->
         <div class="form-element">
-          <label for="firstnameid">Name :</label>
+          <label for="firstnameid">Name</label>
           <div>
             <input
               class="textinput"
@@ -39,27 +39,27 @@
 
         <!--question 3 email-->
         <div class="form-element">
-          <label for="emailid">email :</label>
+          <label for="emailid">email</label>
           <div>
             <input
               class="emailinput"
               type="email"
               name="email"
               id="emailid"
-              placeholder="_________@_____.com" />
+              placeholder=" _________@_____.com" />
           </div>
         </div>
 
         <!--question 4 Sujet-->
         <div class="form-element">
-          <label for="subject">Sujet : </label>
+          <label for="subject">Sujet</label>
 
           <input type="text" class="subject" name="subject" id="subjectid" />
         </div>
 
         <!--question 5 En lien avec... (sélection)-->
         <div class="form-element">
-          <label for="selectif">Demande en lien avec : </label>
+          <label for="selectid">Demande en lien avec</label>
 
           <select class="selectmenu" name="workshopdate" id="selectid">
             <option value="class1" id="class1id">Le menu</option>
@@ -72,7 +72,7 @@
 
         <!--question 6 Message (texturée)-->
         <div class="form-element">
-          <label for="message">Message : </label>
+          <label for="message">Message</label>
 
           <textarea
             maxlength="250"
@@ -84,22 +84,29 @@
 
         <!--question 7 Âge (nombre)-->
         <div class="form-element">
-          <label for="age">Sélectionnez votre age : </label>
+          <label for="age">Sélectionnez votre age </label>
 
-          <input type="number" min="1" class="agebox" name="age" id="ageid" />
+          <input
+            type="number"
+            min="1"
+            max="120"
+            inputmode="numeric"
+            class="agebox"
+            name="age"
+            id="ageid" />
         </div>
 
         <!--question 8 evaluation -->
-        <div class="form-element">
-          Évaluez-nous :
-          <div class="radiodots">
+        <label for="radiodotsid"> Évaluez-nous </label>
+        <div class="rating">
+          <div class="radiodots" id="radiodotsid">
             <input
               class="radioinput"
               type="radio"
               name="rating"
               id="1starid"
               value="1star" />
-            <label class="label" for="1starid">🍕 </label>
+            <label class="labeldots" for="1starid">🍕 </label>
           </div>
 
           <div class="radiodots">
@@ -109,7 +116,7 @@
               name="rating"
               id="2starid"
               value="2star" />
-            <label class="label" for="2starid">🍕🍕 </label>
+            <label class="labeldots" for="2starid">🍕🍕 </label>
           </div>
 
           <div class="radiodots">
@@ -119,7 +126,7 @@
               name="rating"
               id="3starid"
               value="3star" />
-            <label class="label" for="3starid">🍕🍕🍕 </label>
+            <label class="labeldots" for="3starid">🍕🍕🍕 </label>
           </div>
 
           <div class="radiodots">
@@ -129,7 +136,7 @@
               name="rating"
               id="4starid"
               value="4star" />
-            <label class="label" for="4starid">🍕🍕🍕🍕 </label>
+            <label class="labeldots" for="4starid">🍕🍕🍕🍕 </label>
           </div>
 
           <div class="radiodots">
@@ -139,7 +146,7 @@
               name="rating"
               id="5starid"
               value="5star" />
-            <label class="label" for="5starid">🍕🍕🍕🍕🍕 </label>
+            <label class="labeldots" for="5starid">🍕🍕🍕🍕🍕 </label>
           </div>
         </div>
 
