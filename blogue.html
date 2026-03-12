@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Projet #2 - Nicolas Hardy - Charles DT</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header> <!-- HEADER pareille partout -->
+        <nav>
+            <a href="index.html">Index</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="blogue.html">Blogue</a>
+        </nav>
+    </header>
+
+    <main class="blog-content">
+        <!-- Carte d'article -->
+        <div class="article-card">
+            <h2>L'INFORMATIQUE ET SON ENSEMBLE</h2>
+            <p class="information">Quelques informations concernant l'informatique, <em>11 mars 2026</em></p>
+            <img class="article-img" src="https://images.unsplash.com/photo-1674763907524-780bc890710a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo ordinateur">
+            <p class="event"><strong>À ne pas manquer!!</strong> Évènement spécial cette fin de semaine!</p>
+            <p class="main-text">
+                Découvrez le Hackathon IA Québec 2026 ! Une compétition intense où 200 développeurs créent des applications d'intelligence artificielle en 48h. L'événement révèle les tendances futures : IA générative, apprentissage automatique et interfaces vocales. Les gagnants présenteront au Sommet Tech Montréal.
+            </p>
+            <div class="article-actions">
+                <button>Like</button>
+                <button>Replies &nbsp; 3</button>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <!-- Image en full width -->
+            <div class="full-image">
+                <img src="https://plus.unsplash.com/premium_photo-1664474594239-a79e23ee867f?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo equipe">
+            </div>
+            
+            <!-- Opinion des autheurs -->
+            <div class="author-section">
+                <h3>Nicolas Hardy & Charles DT</h3>
+                <p>
+                    Nous sommes des étudiants en développement web au CÉGEP de Shawinigan, passionné par le C# et les layouts CSS responsive. 
+                    On aime créer des cartes d'articles interactives et maîtriser les sélecteurs CSS avancés.
+                    Actuellement en train de perfectionner nos compétences en HTML, JavaScript et Git pour des projets full-stack.
+                </p>
+            </div>
+            <hr>
+
+            <!-- Posts populaires -->
+            <div class="popular-posts">
+                <p class="section-title">Articles populaires</p><br>
+                <ul>
+                    <li>
+                        <div class="post-item">
+                            <div class="image-posts">
+                                <img src="https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Écran code programmation">
+                            </div>
+                            <div class="post-text">
+                                <strong>Développement Web</strong>
+                                <span>HTML, CSS et plus!</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-item">
+                            <div class="image-posts">
+                                <img src="https://plus.unsplash.com/premium_photo-1668902223894-053948883caa?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="C pour programmation">
+                            </div>
+                            <div class="post-text">
+                                <strong>Langages de la famille C</strong>
+                                <span>C - C++ - C#</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-item">
+                            <div class="image-posts">
+                                <img src="https://images.unsplash.com/photo-1628277613967-6abca504d0ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Écran de code">
+                            </div>
+                            <div class="post-text">
+                                <strong>APIs</strong>
+                                <span>GET - POST - REST - DELETE</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-item">
+                            <div class="image-posts">
+                                <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Git">
+                            </div>
+                            <div class="post-text">
+                                <strong>Les commandes Git</strong>
+                                <span>git status, git log et plus!</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <!-- Tags -->
+            <div class="tags-section">
+                <p class="section-title">Tags</p>
+                <div class="tags-list">
+                    <span class="tag-item">C#</span>
+                    <span class="tag-item">CSS</span>
+                    <span class="tag-item">JavaScript</span>
+                    <span class="tag-item">HTML5</span>
+                    <span class="tag-item">Responsive</span>
+                    <span class="tag-item">Git</span>
+                    <span class="tag-item">API</span>
+                    <span class="tag-item">Flexbox</span>
+                    <span class="tag-item">Full-stack</span>
+                    <span class="tag-item">Backend</span>
+                    <span class="tag-item">Frontend</span>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Inspiration -->
+            <div class="inspiration-section">
+                <p class="section-title">Inspiration</p>
+                <div class="inspiration-img">
+                    <img src="https://images.unsplash.com/photo-1552508744-1696d4464960?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inspiration">
+                    <img src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inspiration-Image2">
+                    <img src="https://plus.unsplash.com/premium_photo-1726837224365-226ca0f5d266?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inspiration-Image3">
+                    <img src="https://images.unsplash.com/photo-1537444532052-2afbf769b76c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inspiration-Image4">
+                </div>
+            </div>
+            <hr>
+
+            <!-- Suivez-nous -->
+            <div class="follow-section">
+                <p class="section-title">Suivez-nous</p>
+                <div class="social-icons">
+                <!-- Facebook -->
+                <a href="#" class="social-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="#" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Snapchat -->
+                <a href="#" class="social-icon" title="Snapchat">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </a>
+            </div>
+
+            </div>
+            <hr>
+
+            <!-- S'inscrire -->
+            <div class="subscribe-section">
+                <p class="section-title">S'inscrire</p>
+                <p>Entrez votre adresse courriel et recevez nos dernières actualités blog!</p>
+                <form method="GET" action="blogue.html">
+                    <input type="email" name="email" placeholder="Entrez votre adresse courriel">
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Bouton retour haut -->
+        <button id="back-to-top" onclick="window.scrollTo(0,0)">Haut de page</button>
+        <!-- Copyright -->
+        <p>&copy; <strong>NICOLAS HARDY - CHARLES DT</strong> 2026</p>
+    </footer>
+</body>
+</html>
