@@ -1,196 +1,160 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="CSS/styleform.css" />
     <title></title>
   </head>
   <body>
-   
-      <header class="header">
-        <!--Div de En-Tete -->
-        <h1>Contactez-nous</h1>
-      </header>
-      
-        <div class="maincontent">
-                 <div class="divcenter-form">
-                <!--Formulaire entier excluant le titre-->
-
-          <div class="workshopform">
-            <form action="index.html" method="get">
-              <div class="form-element">
-
-                <!--question 1 last name-->
-                <label for="lastnameid">Last name :</label>
-                <div>
-                  <input
-                    class="textinput"
-                    type="text"
-                    name="lastname"
-                    id="lastnameid" />
-                </div>
-              </div>
-
-              <br />
-
-              <!--question 2 first name-->
-              <div class="form-element">
-                <label for="firstnameid">Name :</label>
-                <div>
-                  <input
-                    class="textinput"
-                    type="text"
-                    name="firstname"
-                    id="firstnameid" />
-                </div>
-              </div>
-
-              <br />
-
-              <div class="form-element">
-                <!--question 3 email-->
-                <label for="emailid">email :</label>
-                <div>
-                  <input
-                    class="emailinput"
-                    type="email"
-                    name="email"
-                    id="emailid"
-                    placeholder="_________@_____.com" />
-                </div>
-
-              <!--question 3 evaluation -->
-              <div class="form-element">
-                Évaluez-nous : 
-                <div class="radiodots">
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="rating"
-                    id="1starid"
-                    value="1star" />
-                  <label class="label" for="1starid">🍕 </label>
-
-                  <div class="radiodots">
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="rating"
-                    id="2starid"
-                    value="2star" />
-                  <label class="label" for="2starid">🍕🍕 </label>
-
-                  <div class="radiodots">                    
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="rating"
-                    id="3starid"
-                    value="3star" />
-                  <label class="label" for="3starid">🍕🍕🍕 </label>
-
-                  <div class="radiodots">
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="rating"
-                    id="2starid"
-                    value="2star" />
-                  <label class="label" for="2starid">🍕🍕🍕🍕 </label>
-
-                  <div class="radiodots">                    
-                  <input
-                    class="radioinput"
-                    type="radio"
-                    name="rating"
-                    id="3starid"
-                    value="3star" />
-                  <label class="label" for="3starid">🍕🍕🍕🍕🍕 </label>
-                </div>
-              </div>
-
-              <br />
-
-              <div class="form-element">
-                <!--question 4 date of birth-->
-                <label for="dobid">Date of birth :</label>
-                <div>
-                  <input class="textinput" type="date" name="dob" id="dobid" />
-                </div>
-              </div>
-
-              <br />
-
-              <div class="form-element">
-                <!--question 5 email-->
-                <label for="emailid">email :</label>
-                <div>
-                  <input
-                    class="emailinput"
-                    type="email"
-                    name="email"
-                    id="emailid"
-                    placeholder="_________@_____.com" />
-                </div>
-              </div>
-
-              <br />
-
-              <div class="form-element">
-                <!--question 6 phone-->
-                <label for="phoneid">Phone number :</label>
-                <div>
-                  <input
-                    class="phoneinput"
-                    type="tel"
-                    name="phone"
-                    id="phoneid"
-                    placeholder="( ___ ) - ( ___ ) - ( ____ )" />
-                </div>
-              </div>
-
-              <br />
-
-              <div class="form-element">
-                <!--question 7 Menu select start date-->
-                <label for="selectif">Select start date :</label>
-                <select class="selectmenu" name="workshopdate" id="selectid">
-                  <option value="class1" id="class1id">
-                    September 12th 2026
-                  </option>
-                  <option value="class2" id="class2id">
-                    January 12th 2026
-                  </option>
-                  <option value="class3" id="class3id">May 4th 2026</option>
-                </select>
-              </div>
-
-              <br />
-
-              <!--Question 8 chainsaw color-->
-              <div class="centertext">
-                <label for="chainsawid">Select your chainsaw's color :</label>
-                <input
-                  class="colorinput"
-                  type="color"
-                  name="chainsaw"
-                  id="chainsawid"
-                  value="#ff0000" />
-              </div>
-
-              <br />
-
-              <!--Submit button-->
-              <div class="submit-element">
-                <input class="submit-button" type="submit" />            
-              </div>
-
-            </form>
+    <header class="header">
+      <!--Div de En-Tete -->
+      <h1>Contactez-nous</h1>
+    </header>
+    <div class="contact-form">
+      <form action="index.html" method="get">
+        <div class="form-element">
+          <!--question 1 last name-->
+          <label for="lastnameid">Last name</label>
+          <div>
+            <input
+              class="textinput"
+              type="text"
+              name="lastname"
+              id="lastnameid" />
           </div>
         </div>
-      </div>
+
+        <!--question 2 first name-->
+        <div class="form-element">
+          <label for="firstnameid">Name</label>
+          <div>
+            <input
+              class="textinput"
+              type="text"
+              name="firstname"
+              id="firstnameid" />
+          </div>
+        </div>
+
+        <!--question 3 email-->
+        <div class="form-element">
+          <label for="emailid">email</label>
+          <div>
+            <input
+              class="emailinput"
+              type="email"
+              name="email"
+              id="emailid"
+              placeholder=" _________@_____.com" />
+          </div>
+        </div>
+
+        <!--question 4 Sujet-->
+        <div class="form-element">
+          <label for="subject">Sujet</label>
+
+          <input type="text" class="subject" name="subject" id="subjectid" />
+        </div>
+
+        <!--question 5 En lien avec... (sélection)-->
+        <div class="form-element">
+          <label for="selectid">Demande en lien avec</label>
+
+          <select class="selectmenu" name="workshopdate" id="selectid">
+            <option value="class1" id="class1id">Le menu</option>
+            <option value="class2" id="class2id">
+              Les heures d'ouvertures
+            </option>
+            <option value="class3" id="class3id">Emplois</option>
+          </select>
+        </div>
+
+        <!--question 6 Message (texturée)-->
+        <div class="form-element">
+          <label for="message">Message</label>
+
+          <textarea
+            maxlength="250"
+            class="message"
+            name="message"
+            id="messageid">
+          </textarea>
+        </div>
+
+        <!--question 7 Âge (nombre)-->
+        <div class="form-element">
+          <label for="age">Sélectionnez votre age </label>
+
+          <input
+            type="number"
+            min="1"
+            max="120"
+            inputmode="numeric"
+            class="agebox"
+            name="age"
+            id="ageid" />
+        </div>
+
+        <!--question 8 evaluation -->
+        <label for="radiodotsid"> Évaluez-nous </label>
+        <div class="rating">
+          <div class="radiodots" id="radiodotsid">
+            <input
+              class="radioinput"
+              type="radio"
+              name="rating"
+              id="1starid"
+              value="1star" />
+            <label class="labeldots" for="1starid">🍕 </label>
+          </div>
+
+          <div class="radiodots">
+            <input
+              class="radioinput"
+              type="radio"
+              name="rating"
+              id="2starid"
+              value="2star" />
+            <label class="labeldots" for="2starid">🍕🍕 </label>
+          </div>
+
+          <div class="radiodots">
+            <input
+              class="radioinput"
+              type="radio"
+              name="rating"
+              id="3starid"
+              value="3star" />
+            <label class="labeldots" for="3starid">🍕🍕🍕 </label>
+          </div>
+
+          <div class="radiodots">
+            <input
+              class="radioinput"
+              type="radio"
+              name="rating"
+              id="4starid"
+              value="4star" />
+            <label class="labeldots" for="4starid">🍕🍕🍕🍕 </label>
+          </div>
+
+          <div class="radiodots">
+            <input
+              class="radioinput"
+              type="radio"
+              name="rating"
+              id="5starid"
+              value="5star" />
+            <label class="labeldots" for="5starid">🍕🍕🍕🍕🍕 </label>
+          </div>
+        </div>
+
+        <!--Submit button-->
+        <div class="submit-element">
+          <input class="submit-button" type="submit" />
+        </div>
+      </form>
     </div>
   </body>
 </html>
